@@ -4,9 +4,9 @@ STRIP = strip
 
 CFLAGS = -O3 -Wall -Werror
 
-echor: main.o
+echoer: main.o
 	$(CC) $(CFLAGS) -o $@ $+
 	$(STRIP) $@
 
 clean:
-	rm -f echor *.o
+	rm -f echoer *.o
